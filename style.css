@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Barrio&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(bg.jpg);
+}
+
+h1 {
+    font-family: "Barrio", serif;
+    font-weight: 400;
+    font-size: 56px;
+    color: white;
+    animation: jump infinite 1s;
+}
+
+p {
+    font-family: "Barrio", serif;
+    font-weight: 400;
+    letter-spacing: 5px;
+    color: white;
+}
+
+@keyframes jump {
+    0% {
+        scale: 1;
+    }
+    50% {
+        letter-spacing: 12px;
+        scale: 1.5;
+    }
+    100% {
+        scale: 1;
+    }
+}
